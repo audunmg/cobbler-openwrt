@@ -1,0 +1,3 @@
+Packages needed to run cobbler-register on openwrt/lede
+
+For example to pxeboot and register servers in cobbler with a minimal ramdisk image.
