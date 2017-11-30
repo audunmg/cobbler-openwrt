@@ -1,0 +1,18 @@
+From: Audun Gangsto <audun@gangsto.cz>
+
+Subject: [PATCH] koan: ethtool is more difficult to build than netifaces
+Signed-off-by: Audun Gangsto <audun@gangsto.cz>
+---
+--- a/koan/utils.py
++++ b/koan/utils.py
+@@ -31,8 +31,8 @@ import tempfile
+ try:  # python 2
+     import urllib2
+     import xmlrpclib
+-    import ethtool
+-    ethtool_available = True
++    import netifaces
++    ethtool_available = False
+ except ImportError:  # python 3
+     import urllib.request as urllib2
+     import xmlrpc.client as xmlrpclib
